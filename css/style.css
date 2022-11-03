@@ -40,7 +40,6 @@ body {
   line-height: 1;
   font-size: 14px;
   line-height: 1;
-  font-family: Montserrat;
   color: #333333;
 }
 
@@ -51,8 +50,6 @@ h1 {
 
 .wrapper {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   /* 
   justify-content: center;
   align-items: center;
@@ -82,4 +79,280 @@ h1 {
     padding: 0px 15px;
   }
 }
+/* ================================ */
+.header__background {
+  background-color: #c6cacb;
+}
+
+.header {
+  height: 90px;
+  position: relative;
+}
+
+.header__block {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  align-items: center;
+}
+
+@media (max-width: 720px) {
+  .header__block {
+    flex-direction: column;
+  }
+  .header__menu-list {
+    max-width: 500px;
+    font-size: 20px;
+    flex-wrap: wrap;
+    margin-top: -15px;
+  }
+  .header {
+    height: 150px;
+  }
+  .header__menu-list li {
+    padding-bottom: 15px;
+  }
+}
+.header__logo {
+  font-family: Martel Sans;
+  font-weight: 800;
+  padding-top: 15px;
+  transition-duration: 0.5s;
+  display: flex;
+  position: relative;
+  top: 0;
+}
+
+.button {
+  background-image: linear-gradient(rgb(55, 55, 55), rgb(94, 94, 94));
+  background-size: 0 2px, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all 0.2s ease-out;
+}
+
+.button:hover {
+  background-size: 100% 2px, auto;
+}
+
+.header__menu-list {
+  display: flex;
+  justify-content: space-around;
+  font-family: Libre Franklin;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+.header__menu-list li {
+  padding-right: 35px;
+}
+
+.inherit {
+  color: inherit;
+}
+
+/* ================================ */
+.bigphoto__imgbackground {
+  background-size: cover !important;
+  background-position: center center !important;
+}
+
+.bigphoto__textblock {
+  padding: 150px 0px;
+}
+
+.bigphoto__title {
+  font-size: 30px;
+  font-family: Martel Sans;
+  padding: 15px;
+  color: #8f8f8f;
+}
+
+.bigphoto__maintitle {
+  font-family: Libre Franklin;
+  font-size: 50px;
+  padding: 5px 15px;
+  font-weight: 800;
+}
+
+.bigphoto__title-link {
+  font-family: Libre Franklin;
+  font-size: 20px;
+  padding: 5px 15px;
+  color: #8f8f8f;
+}
+
+/* ================================ */
+.textline {
+  background-color: #ebebeb;
+}
+
+.textline__block {
+  padding: 60px 0px;
+}
+
+.textline__title {
+  font-family: Martel Sans;
+  padding-bottom: 30px;
+  font-size: 30px;
+  color: #8f8f8f;
+}
+
+.textline__maintitle {
+  font-family: Libre Franklin;
+  font-size: 45px;
+  font-weight: 800;
+}
+
+/* ================================ */
+.mainshop {
+  background-color: #f5f5f5;
+  padding-bottom: 45px;
+}
+
+.mainshop__textblock {
+  padding: 45px 0px;
+}
+
+.mainshop__title {
+  font-family: Martel Sans;
+  padding-bottom: 10px;
+  font-size: 20px;
+  color: #8f8f8f;
+}
+
+.mainshop__maintitle {
+  font-family: Libre Franklin;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.mainshop__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainshop__advertisment {
+  margin: 15px;
+  padding: 5px;
+  width: 315px;
+  height: 460px;
+  position: relative;
+  text-align: center;
+  border: rgba(51, 51, 51, 0.2431372549) 1px solid;
+  background-color: #ededed;
+  box-shadow: 5px 5px 15px #333333;
+}
+
+.advertisment__add {
+  margin-top: -40px;
+  font-family: Libre Franklin;
+  color: #8f8f8f;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.advertisment__name {
+  margin-top: 30px;
+  font-family: Martel Sans;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.advertisment__price {
+  margin-top: 15px;
+  font-family: Libre Franklin;
+  color: #8f8f8f;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* ================================ */
+.extras {
+  background-color: #ebebeb;
+}
+
+.extras__blocks {
+  padding-top: 55px;
+  padding-bottom: 55px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 700px;
+}
+
+.extras__block1 {
+  padding: 15px;
+}
+
+.extras__block-maintitle {
+  font-family: Martel Sans;
+  font-size: 20px;
+  font-weight: 800;
+  padding-bottom: 15px;
+}
+
+.extras__block-title {
+  font-family: Libre Franklin;
+  color: #8f8f8f;
+  font-size: 15px;
+}
+
+/* ================================ */
+.footer {
+  padding-top: 70px;
+  padding-bottom: 90px;
+  background-color: #c6cacb;
+}
+
+.footer__blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 900px;
+}
+
+.footer__block1 {
+  padding: 15px;
+}
+
+.footer__block1-maintitle {
+  font-family: Martel Sans;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.footer__block1-list {
+  padding-top: 15px;
+  font-family: Libre Franklin;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.footer__block1-list li {
+  padding: 7px;
+}
+
+/* ================================ */
+.copyright {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #c6cacb;
+}
+
+.copyright__blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 600px;
+}
+
+.copyright__block1 {
+  font-family: Libre Franklin;
+  font-size: 20px;
+}
+
 /* ================================ */
