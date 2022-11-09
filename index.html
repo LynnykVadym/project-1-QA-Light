@@ -13,6 +13,34 @@
 
 </head>
 <body>
+    <div class="d-none">
+        <svg width="0" height="0" class="hidden">
+          <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="delivery-time-1">
+            <title>Delivery Time</title>
+            <desc>A line styled icon from Orion Icon Library.</desc>
+            <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" d="M62 46v-5l-8-7h-8" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+            <circle data-name="layer2" cx="24" cy="54" r="4" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+            <circle data-name="layer2" cx="54" cy="54" r="4" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+            <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" d="M50 54H28m-8 0h-4v-8h46v8h-4M24.5 24H46v22m-30 0V29.8M2 38h6m-2 8h2" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+            <circle data-name="layer1" cx="14" cy="18" r="12" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+            <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10" d="M14 12v8h6" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+          </symbol>
+          <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="helpline-24h-1">
+            <title>Helpline 24h</title>
+            <desc>A line styled icon from Orion Icon Library.</desc>
+            <path data-name="layer2" d="M52.3 48.8c1.2.8 3 1.9 2.7 4.3S51 62 43 62s-17.7-6.3-26.2-14.8S2 28.9 2 21 9 9.3 10.9 9s3.6 1.5 4.3 2.7l6 9.2a4.3 4.3 0 0 1-1.1 5.8c-2.6 2.1-6.8 4.6 2.9 14.3s12.3 5.4 14.3 2.9a4.3 4.3 0 0 1 5.8-1.1z" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+            <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10" d="M54 2l-6 14h14m-4-6v12m-14 0H32l8.5-10v-.2A6 6 0 0 0 32 3.6" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+          </symbol>
+  
+          <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="label-tag-1">
+            <title>Label Tag</title>
+            <desc>A line styled icon from Orion Icon Library.</desc>
+            <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" d="M25.6 61L3 38.4 38.4 3l21.2 1.4L61 25.6 25.6 61z" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+            <circle data-name="layer2" cx="48" cy="15" r="4" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></circle>
+            <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10" d="M31.3 21.4l11.3 11.3m-22.6 0l8.5 8.5M25.6 27l5.7 5.7" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--layer1, #202020)"></path>
+          </symbol>
+        </svg>
+      </div>
     <div class="wrapper">
         <div class="header__background">
             <div class="__container">
@@ -23,15 +51,27 @@
                                 <h1><a class="inherit button" href=".//index.html">SHOPAHOLIC</a></h1>
                             </div>
                         </div>
-                        <div class="header__menu">
+                        <button class="navbar-toggler" type="button"><span class="navbar-toggler-icon"></span></button>
+                        <div class="header__menu menuvisible navbar-collapse collapse">
+                            <ul class="header__menu-list navbar-nav me-auto">
+                                <li class="nav-item"><a class="inherit button nav-link" href="">Home</a></li>
+                                <li class="nav-item"><a class="inherit button nav-link" href="">Shop</a></li>
+                                <li class="nav-item"><a class="inherit button nav-link" href="">Contact</a></li>
+                                <li class="nav-item"><a class="inherit button nav-link" href="">About</a></li>
+                                <li class="nav-item"><a class="inherit button nav-link" href="">Cart <span class="header__counter">(0)</span></a></li>
+                                <li class="nav-item"><a class="inherit button nav-link" href="">(0)</a></li>
+                                <li class="nav-item"><a class="inherit button nav-link" href="">Login</a></li>
+                            </ul>
+                        </div>
+                        <div class="header__menu menuhidden">
                             <ul class="header__menu-list">
-                                <li><a class="inherit button" href="">Home</a></li>
-                                <li><a class="inherit button" href="">Shop</a></li>
-                                <li><a class="inherit button" href="">Contact</a></li>
-                                <li><a class="inherit button" href="">About</a></li>
-                                <li><a class="inherit button" href="">Cart <span class="header__counter">(0)</span></a></li>
-                                <li><a class="inherit button" href="">(0)</a></li>
-                                <li><a class="inherit button" href="">Login</a></li>
+                                <li class="nav-item"><a class="inherit button nav-link" href="">Home</a></li>
+                                <li class="nav-item"><a class="inherit button nav-link" href="">Shop</a></li>
+                                <li class="nav-item"><a class="inherit button nav-link" href="">Contact</a></li>
+                                <li class="nav-item"><a class="inherit button nav-link" href="">About</a></li>
+                                <li class="nav-item"><a class="inherit button nav-link" href="">Cart <span class="header__counter">(0)</span></a></li>
+                                <li class="nav-item"><a class="inherit button nav-link" href="">(0)</a></li>
+                                <li class="nav-item"><a class="inherit button nav-link" href="">Login</a></li>
                             </ul>
                         </div>
                     </div>
@@ -44,7 +84,7 @@
                     <div class="__container">
                         <div class="bigphoto__textblock">
                              <div class="bigphoto__title"><h2>New Inspiration 2022</h2></div>
-                             <div class="bigphoto__maintitle"><h2>20% off on new season</h2></div>
+                             <div class="bigphoto__maintitle"><h2>20% off on <br> new season</h2></div>
                              <div class="bigphoto__title-link"><a class="inherit button" href="">Browse collections</a></div>
                         </div>
                     </div>
@@ -57,6 +97,96 @@
                     <div class="textline__title"><h3>Carefully created collections</h3></div>
                     <div class="textline__maintitle"><h3>Browse our categories</h3></div>
                 </div>
+                <div class="carousel">
+                    <div class="slider">
+                      <div class="slide-track">
+                        <div class="slide carousel-item">
+                          <a href="#!" class="category-item">
+                            <img src="images/carousel/product-1.jpg" height="100" width="250">
+                            <strong class="category-item-title">Watches</strong>
+                          </a>
+                        </div>
+                        <div class="slide carousel-item">
+                          <a href="#!" class="category-item">
+                            <img src="images/carousel/product-2.jpg" height="100" width="250">
+                            <strong class="category-item-title">Watches</strong>
+                          </a>
+                        </div>
+                        <div class="slide carousel-item">
+                          <a href="#!" class="category-item">
+                            <img src="images/carousel/product-3.jpg" height="100" width="250">
+                            <strong class="category-item-title">Watches</strong>
+                          </a>
+                        </div>
+                        <div class="slide carousel-item">
+                          <a href="#!" class="category-item">
+                            <img src="images/carousel/product-4.jpg" height="100" width="250">
+                            <strong class="category-item-title">Watches</strong>
+                          </a>
+                        </div>
+                        <div class="slide carousel-item">
+                          <a href="#!" class="category-item">
+                            <img src="images/carousel/product-5.jpg" height="100" width="250">
+                            <strong class="category-item-title">Watches</strong>
+                          </a>
+                        </div>
+                        <div class="slide carousel-item">
+                          <a href="#!" class="category-item">
+                            <img src="images/carousel/product-6.jpg" height="100" width="250">
+                            <strong class="category-item-title">Watches</strong>
+                          </a>
+                        </div>
+                        <div class="slide carousel-item">
+                          <a href="#!" class="category-item">
+                            <img src="images/carousel/product-7.jpg" height="100" width="250">
+                            <strong class="category-item-title">Watches</strong>
+                          </a>
+                        </div>
+                        <div class="slide carousel-item">
+                          <a href="#!" class="category-item">
+                            <img src="images/carousel/product-1.jpg" height="100" width="250">
+                            <strong class="category-item-title">Watches</strong>
+                          </a>
+                        </div>
+                        <div class="slide carousel-item">
+                          <a href="#!" class="category-item">
+                            <img src="images/carousel/product-2.jpg" height="100" width="250">
+                            <strong class="category-item-title">Watches</strong>
+                          </a>
+                        </div>
+                        <div class="slide carousel-item">
+                          <a href="#!" class="category-item">
+                            <img src="images/carousel/product-3.jpg" height="100" width="250">
+                            <strong class="category-item-title">Watches</strong>
+                          </a>
+                        </div>
+                        <div class="slide carousel-item">
+                          <a href="#!" class="category-item">
+                            <img src="images/carousel/product-4.jpg" height="100" width="250">
+                            <strong class="category-item-title">Watches</strong>
+                          </a>
+                        </div>
+                        <div class="slide carousel-item">
+                          <a href="#!" class="category-item">
+                            <img src="images/carousel/product-5.jpg" height="100" width="250">
+                            <strong class="category-item-title">Watches</strong>
+                          </a>
+                        </div>
+                        <div class="slide carousel-item">
+                          <a href="#!" class="category-item">
+                            <img src="images/carousel/product-6.jpg" height="100" width="250">
+                            <strong class="category-item-title">Watches</strong>
+                          </a>
+                        </div>
+                        <div class="slide carousel-item">
+                          <a href="#!" class="category-item">
+                            <img src="images/carousel/product-7.jpg" height="100" width="250">
+                            <strong class="category-item-title">Watches</strong>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
         </div>
         <div class="mainshop">
@@ -69,57 +199,65 @@
                     <div class="mainshop__listblock">
                         <div class="mainshop__list">
                             <div class="mainshop__advertisment">
-                                <div class="advertisment__img">
+                                <div class="advertisment__img product">
                                     <img src=".//images/product-1.jpg" alt="">
-                                    <div class="advertisment__add"><a class="inherit button" href="">Add to cart</a></div>
+                                    <div class="advertisment__add product-overlay"><a class="inherit button" href="">Add to cart</a></div>
                                 </div>
                                 <div class="advertisment__name">Foo Air Bag</div>
                                 <div class="advertisment__price">$25</div>
                             </div>
                             <div class="mainshop__advertisment">
-                                <div class="advertisment__img">
+                                <div class="advertisment__img product">
                                     <img src=".//images/product-1.jpg" alt="">
-                                    <div class="advertisment__add"><a class="inherit button" href="">Add to cart</a></div>
+                                    <div class="advertisment__add product-overlay"><a class="inherit button" href="">Add to cart</a></div>
                                 </div>
                                 <div class="advertisment__name">Foo Air Bag</div>
                                 <div class="advertisment__price">$25</div>
                             </div>
                             <div class="mainshop__advertisment">
-                                <div class="advertisment__img">
+                                <div class="advertisment__img product">
                                     <img src=".//images/product-1.jpg" alt="">
-                                    <div class="advertisment__add"><a class="inherit button" href="">Add to cart</a></div>
+                                    <div class="advertisment__add product-overlay"><a class="inherit button" href="">Add to cart</a></div>
                                 </div>
                                 <div class="advertisment__name">Foo Air Bag</div>
                                 <div class="advertisment__price">$25</div>
                             </div>
                             <div class="mainshop__advertisment">
-                                <div class="advertisment__img">
+                                <div class="advertisment__img product">
                                     <img src=".//images/product-1.jpg" alt="">
-                                    <div class="advertisment__add"><a class="inherit button" href="">Add to cart</a></div>
+                                    <div class="advertisment__add product-overlay"><a class="inherit button" href="">Add to cart</a></div>
                                 </div>
                                 <div class="advertisment__name">Foo Air Bag</div>
                                 <div class="advertisment__price">$25</div>
                             </div>
                             <div class="mainshop__advertisment">
-                                <div class="advertisment__img">
+                                <div class="advertisment__img product">
                                     <img src=".//images/product-1.jpg" alt="">
-                                    <div class="advertisment__add"><a class="inherit button" href="">Add to cart</a></div>
+                                    <div class="advertisment__add product-overlay"><a class="inherit button" href="">Add to cart</a></div>
                                 </div>
                                 <div class="advertisment__name">Foo Air Bag</div>
                                 <div class="advertisment__price">$25</div>
                             </div>
                             <div class="mainshop__advertisment">
-                                <div class="advertisment__img">
+                                <div class="advertisment__img product">
                                     <img src=".//images/product-1.jpg" alt="">
-                                    <div class="advertisment__add"><a class="inherit button" href="">Add to cart</a></div>
+                                    <div class="advertisment__add product-overlay"><a class="inherit button" href="">Add to cart</a></div>
                                 </div>
                                 <div class="advertisment__name">Foo Air Bag</div>
                                 <div class="advertisment__price">$25</div>
                             </div>
                             <div class="mainshop__advertisment">
-                                <div class="advertisment__img">
+                                <div class="advertisment__img product">
                                     <img src=".//images/product-1.jpg" alt="">
-                                    <div class="advertisment__add"><a class="inherit button" href="">Add to cart</a></div>
+                                    <div class="advertisment__add product-overlay"><a class="inherit button" href="">Add to cart</a></div>
+                                </div>
+                                <div class="advertisment__name">Foo Air Bag</div>
+                                <div class="advertisment__price">$25</div>
+                            </div>
+                            <div class="mainshop__advertisment">
+                                <div class="advertisment__img product">
+                                    <img src=".//images/product-1.jpg" alt="">
+                                    <div class="advertisment__add product-overlay"><a class="inherit button" href="">Add to cart</a></div>
                                 </div>
                                 <div class="advertisment__name">Foo Air Bag</div>
                                 <div class="advertisment__price">$25</div>
@@ -133,14 +271,23 @@
             <div class="__container">
                 <div class="extras__blocks">
                     <div class="extras__block1">
+                        <svg class="svg-icon svg-icon-big svg-icon-light">
+                      <use xlink:href="#delivery-time-1"> </use>
+                        </svg>
                         <div class="extras__block-maintitle">FREE SHIPPING</div>
                         <div class="extras__block-title">Free shipping worldwide</div>
                     </div>
                     <div class="extras__block1">
+                        <svg class="svg-icon svg-icon-big svg-icon-light">
+                            <use xlink:href="#helpline-24h-1"> </use>
+                          </svg>
                         <div class="extras__block-maintitle">24 X 7 SERVICE</div>
                         <div class="extras__block-title">Free shipping worldwide</div>
                     </div>
                     <div class="extras__block1">
+                        <svg class="svg-icon svg-icon-big svg-icon-light">
+                            <use xlink:href="#label-tag-1"> </use>
+                          </svg>
                         <div class="extras__block-maintitle">FESTIVAL OFFERS</div>
                         <div class="extras__block-title">Free shipping worldwide</div>
                     </div>
@@ -194,5 +341,6 @@
             </div>
         </div>
     </div>
+    <script src="/js/script.js"></script>
 </body>
 </html>
